@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Male Testosterone Level Gauge</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/justgage/1.2.9/justgage.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Male Testosterone Level Checker</h2>
+        <div >
+        <div class="flex-container">
+            <div class="form-container">
+                <form id="testosteroneForm" class="form-style">
+                    <label>Age:</label>
+                    <input type="number" id="age" min="18" max="100"><br>
+                    <label>Free Testosterone:</label>
+                    <input type="number" id="testosteroneLevel"><br>
+                    <label>Unit:</label>
+                    <select id="unit">
+                        <option value="pgml">pg/ml</option>
+                        <option value="pmolL">pmol/L</option>
+                    </select><br>
+                    <input type="button" value="Check Level" onclick="checkLevel()" class="button-style">
+                </form>
+            </div>
+        <div id="testosteroneGauge" class="gauge-container"></div>
+        
+        </div>
+        <div id="rangeTableContainer"></div> <!-- Container for the table -->
+    </div>
+    <p class="data-attribution">
+        Testosterone level data sourced from: 
+        <a href="https://androgenhacker.com/testosterone-levels#:~:text=And%20the%20same%20data%20in,60%20552%20ng%2Fdl" target="_blank">
+            AndrogenHacker
+        </a>
+    </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
