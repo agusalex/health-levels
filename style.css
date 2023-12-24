@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.gauge-container {
+    flex: 1;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center; /* Center gauge horizontally */
+    align-items: center; /* Center gauge vertically */
+    padding-top: 5%;
+}
+
+
+
+.form-container {
+    flex: 1;
+    margin-top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .form-container {
+        width: 100%;
+    }
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form-style {
+    margin-bottom: 20px;
+}
+
+.form-style label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-style input[type="number"],
+.form-style select {
+    width: 15%; /* Adjust width as needed */
+    padding: 8px;
+    margin-bottom: 15px;
+    text-align: center; /* Center the text */
+}
+
+.button-style {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#rangeTableContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%; /* Adjust width as needed */
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table tr:nth-child(even) { background-color: #f2f2f2; }
+table tr:hover { background-color: #ddd; }
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
